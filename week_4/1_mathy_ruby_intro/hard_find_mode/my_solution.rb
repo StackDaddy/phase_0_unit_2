@@ -51,6 +51,27 @@ end
 
 # 3. Refactored Solution
 
+def mode(array)
+	record = Hash.new(0)
+	max = 0 
+	array_mode = []
+	array.each do |element|
+		record[element] += 1
+		if record[element] > max 
+			max = record[element]
+			array_mode = [element]
+		elsif record[element] == max 
+			array_mode << element
+		end 
+	end
+	array_mode.sort!
+end 
+
+#  I actually did not plan on sorting my array_mode array, and that caused one test to fail.
 
 
-# 4. Reflection 
+
+# 4. Reflection
+
+#This wa sdefinitely a little more challenging.  Fortunately, I remember having solved this same problem in JS, so I was 
+# pretty familiar with how to form a solution.  Using the Hash was the key.   
