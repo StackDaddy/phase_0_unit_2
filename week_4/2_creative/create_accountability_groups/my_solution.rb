@@ -74,7 +74,10 @@ account_groups(array)
 
 # 4. Refactored Solution
 
-
+#I just left my final solution in the initial solution, but when I first wrote the function
+#I just had array.shuffle, thinking this would do the trick of randomizing the array.  It turns out 
+#that I needed to use the ! command so that it constructed a new array and saved it.  Also, it was very jumbled,
+#,so I put a newline command after each accountability group and at the end of the loop.  
 
 
 
