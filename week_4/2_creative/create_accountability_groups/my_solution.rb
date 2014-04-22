@@ -57,10 +57,11 @@ array = ["Adam Hardy", "Adrian Soghoian", "Ajay Bir Singh", "Alec Ashford", "Ale
 "Zach Pflederer", "antonio perez"]
 
 def account_groups(array) 
-	3.times do |array|
-		puts "Unit 1 Accountability Groups"
-		puts array.each_slice(4).to_a 
-		array.shuffle
+	for i in 1..3
+		puts "Unit #{i} Accountability Groups \n"
+		print array.each_slice(4).to_a 
+		array.shuffle!
+		puts "\n"
 	end
 end
 
