@@ -9,6 +9,34 @@
 # Write your comments on what each thing is doing. 
 # If you have difficulty, go into IRB and play with the methods.
 
+# array.each do |letter|
+#   ((input[letter]).ord - 4).chr
+
+
+# for i in input
+#   if input[i] < 97 || input[i] > 122
+#       next
+#   elsif input[i] < 101
+#       input[i] = (input[i] + 22)
+#   else
+#   input[i] = (input[i] - 4)
+# end
+
+input = "hello"
+
+input.each_char do |i| # for each character in the string, i is the current iteration.
+  if input[i].ord < 97.ord || input[i].ord > 122 # if the current character is not a lowercase letter
+      next # move to the next letter
+  elsif input[i] < 101 # if the letter is a, b, c, or d
+      input[i].ord = (input[i].ord + 22).chr # adding 22 will result in its cooresponding letter (see an ascii table)
+  else
+  input[i] = (input[i].ord - 4).chr # go back 4 characters
+  end
+end
+
+puts "#{input}"
+
+
 
 
 def north_korean_cipher(coded_message)
