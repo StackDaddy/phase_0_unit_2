@@ -50,11 +50,25 @@ end
 
 # 3. Refactored Solution
 
+def total(array) 
+	sum = 0 
+	array.each do |x|
+		sum += x
+	end
+	return sum
+end
 
+def sentence_maker(array)
+	sentence = array.join(' ').capitalize! << "."
+end
 
 # 4. Reflection 
 
-
+#This challenge was definitely different from the previous challenges.  There are
+#alot more parts to solving these challenges.  For one, I had to go back and reveiw 
+#how to use git commands, how to use irb, and not to mention, how to write ruby code and then run a test.
+#I definitely feel accomplished afted passing all the tests.  I think this is ok for now, but I am still a little
+#unclear on how exactly these tests are being run.  
 
 
 
