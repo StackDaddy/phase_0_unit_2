@@ -86,9 +86,39 @@ account_groups(array)
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
+puts array.each_slice(4).to_a == account_groups(array)
 
+puts array.shuffle! != ["Adam Hardy", "Adrian Soghoian", "Ajay Bir Singh", "Alec Ashford", "Alex Mazur", "Alexis Ernst",
 
+"Amelia Downs", "Amol Borcar", "Andrew C. Koines, Jr.", "Andrew Principe", "Armen Vartan",
 
+"Austin Bourdier", "Ben Brostoff", "Brendan Susens-Jackson", "Brennon Williams",
+
+"Bridgette L. Salcido", "Britney Van Valkenburg", "Celeen Rusk", "Chad Everett Howard", "Christian Moon", "Colin Trent",
+
+"Dakota Cousineau", "Daniel Kim", "Danny Glover", "Gabriel Garrett",
+
+"Gregory Piccolo", "Gregory White", "Hing Huynh", "Ian Shuff", "Jake Wayne",
+
+"Jeff Kynaston", "Jennifer Oseitutu", "Jeuel Wilkerson", "John Thomas Mulvahill",
+
+"Joseph Rosztoczy", "Josh Jeong", "Katie Reiner", "Kendall Carey",
+
+"Kenneth Mendonca", "Kirstin Jarchow", "Kris Shanks", "Lienha Carleton",
+
+"Martin A. Lear", "Matias Andres Meneses", "Matthew Hein", "Matthew Kuzio",
+
+"Matthieu Gavaudan", "Michael Drew Teter", "Michael Ginalick", "Neel Shah", "Nick Giovacchini",
+
+"Osama Zayyad", "Phillip Crawford", "Phillip Smith", "RJ Arena", "Rj Bernaldo",
+
+"Ronald Ishak", "Ryan Stack", "Scott Jason", "Sherwood Callaway", "Siddharth Patel",
+
+"Simon Gondeck", "Spencer Olson", "Stella Kim", "Stuart Pearlman", "Timoor Kurdi",
+
+"Timothy Howard", "Valentine Sverdlov", "Vivek M George", "Yariv Kirschner",
+
+"Zach Pflederer", "antonio perez"]
 
 
 # 5. Reflection 
