@@ -28,15 +28,20 @@
 
 
 # 2. Initial Solution
-def total(Array) 
-	Array.sum
+def total(array) 
+	sum = 0 
+	array.each do |x|
+		sum += x
+	end
+	return sum
 end
 
 
-def sentence_maker(Array)
-	sentence = Array.join(',')
-	sentence.capitalized!
+def sentence_maker(array)
+	sentence = array.join(' ')
+	sentence.capitalize!
 	sentence << "."
+	return sentence
 end
 
 
