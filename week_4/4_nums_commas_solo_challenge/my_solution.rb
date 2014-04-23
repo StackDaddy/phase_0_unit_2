@@ -25,7 +25,7 @@
 
 
 # 2. Initial Solution
-def number_fixer(num)
+def separate_comma(num)
 	str = num.to_s.split('')
 	str.reverse!
 	commas = []
@@ -43,8 +43,7 @@ def number_fixer(num)
 	commas.join("")
 end 
 
-puts number_fixer(1776000)
-
+puts separate_comma(4543)
 
 
 
