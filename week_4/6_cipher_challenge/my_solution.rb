@@ -24,15 +24,25 @@
 
 input = "hello"
 
-input.each_char do |i| # for each character in the string, i is the current iteration.
-  if input[i].ord < 97.ord || input[i].ord > 122 # if the current character is not a lowercase letter
-      next # move to the next letter
-  elsif input[i] < 101 # if the letter is a, b, c, or d
-      input[i].ord = (input[i].ord + 22).chr # adding 22 will result in its cooresponding letter (see an ascii table)
-  else
-  input[i] = (input[i].ord - 4).chr # go back 4 characters
+def north_korean_cipher(coded_message)
+  input = coded_message.split("")
+  input.each_char do |i| # for each character in the string, i is the current iteration.
+    if input[i].ord.between(97, 100)# if the current character is not a lowercase letter
+      input[i] = (input[i].ord + 22).chr
+    elsif input[i].ord.between(101, 122)  # if the letter is a, b, c, or d
+      input[i] = (input[i].ord - 4).chr
+    elsif input[i] == "@" || input[i] == "#" || input[i] == "$" || input[i] == "%"|| input[i] == "^" || input[i] == "&"|| input[i] =="*"
+       input[i] = " "                                                                         # adding 22 will result in its cooresponding letter (see an ascii table)
+    else
+      next 
+    end
   end
-end
+  input = input.join("")
+  if input.match(/\d+/) #What is this matching? Look at Rubular for help. 
+    input.gsub!(/\d+/) { |num| num.to_i / 100 } #He's been known to exaggerate...
+  end  
+  return input
+  end
 
 puts "#{input}"
 
@@ -100,6 +110,26 @@ def north_korean_cipher(coded_message)
 end
 
 # Your Refactored Solution
+
+def north_korean_cipher(coded_message)
+  input = coded_message.downcase.split("")
+  decoded = []
+  input.each do |i| 
+    if (97..100).include?(i.ord)
+      decoded << (i.ord + 22).chr
+    elsif (101..122).include?(i.ord)
+        decoded << (i.ord - 4).chr
+    elsif i == "@" || i == "#" || i == "$" || i == "%"|| i == "^" || i== "&"|| i =="*"
+        decoded << " "                     
+    else
+        decoded << i  
+    end
+  end
+  
+  intel = decoded.join("")
+  
+  return intel  
+  end
 
 
 
