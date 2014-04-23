@@ -26,23 +26,26 @@
 
 # 2. Initial Solution
 def number_fixer(num)
-	str = num.to_s
+	str = num.to_s.split('')
 	str.reverse!
 	commas = []
 	count = 0
-	str.split("").each do |i|
+	str.each do |i|
 		if count < 3
 			commas.unshift(i)
 			count += 1
-		else 
+		elsif count == 3 
 			commas.unshift(",")
-			count = 0
+			commas.unshift(i)
+			count = 1
 		end 
 	end
 	commas.join("")
 end 
 
-print number_fixer(100000)
+puts number_fixer(1776000)
+
+
 
 
 		
