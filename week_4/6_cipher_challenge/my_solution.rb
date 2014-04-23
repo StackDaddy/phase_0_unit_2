@@ -127,6 +127,10 @@ def north_korean_cipher(coded_message)
   end
   
   intel = decoded.join("")
+
+  if intel.match(/\d+/) #What is this matching? Look at Rubular for help. 
+    intel.gsub!(/\d+/) { |num| num.to_i / 100 } #He's been known to exaggerate...
+  end
   
   return intel  
   end
