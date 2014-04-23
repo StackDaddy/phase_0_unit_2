@@ -56,6 +56,13 @@ puts separate_comma(4543)
 
 # 3. Refactored Solution
 
+#Two things that I had adjusted in the inital code.  The first was adjusting the count variable to 1.  I reset it to zero,
+#forgetting that I had just pushed another integer past the commma. .  Also I did not correctly define the function with the correct name.
 
 
 # 4. Reflection 
+
+#this challenge was a big learning experience.  For one, before I even speak about code, I might as well metnion, 
+#how I lost about an hour because I didn't follow directions.   I created my own function name instead of the one supplied, so the tests kept on
+#failing and I couldn't figure out why.  When working with other people, I could see how it will be important to always use the same variable and function names.
+#Secondly, this excersize helped me think about how the code works and envision the output in order to debut my code.  That is how I adjusted 0 to 1 on count.  
