@@ -32,7 +32,13 @@ end
 p my_array_modification_method(i_want_pets, 1) == ["I", "want", 4, "pets", "but", "I", "only", "have", 3 ]
 p my_hash_modification_method(my_family_pets_ages, 2) == {"Evi" => 8, "Hoobie" => 5, "George" => 14, "Bogart" => 6, "Poly" => 6, "Annabelle" => 2, "Ditto" => 5}
 # Identify and describe the ruby method you implemented. 
-# 
+# I was unable to find a method that works on both.  I will continue to look for one 
+# and will let you all know if I find something.  In the meantime, here is what I have come up with.
+#For my first method, I use map on source, which collects all the value that return true within the block.  
+#Within the block, I use a ternary conditional ecpression, which determines whether the element
+#is an integer. If true, the block return the element plus the thing to be modified, and if false, it returns soley the element
+#The second method uses an each method to go through each element of the array.  For each element, I use the += operator to change the value on
+# on each key value pair. 
 #
 #
 
