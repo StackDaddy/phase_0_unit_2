@@ -57,6 +57,13 @@ p translate_to_cipher("I want cookies")
 p translate_to_cipher("I want cookies")
 p translate_to_cipher("I want cookies")
 
+"m#aerx%gssomiw"
+"m$aerx@gssomiw"
+"m*aerx*gssomiw"
+"m*aerx*gssomiw"
+
+#No, it does not.  
+
 
 
 
