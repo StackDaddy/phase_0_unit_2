@@ -149,4 +149,8 @@ p north_korean_cipher("ribx^wxst:$wsyxl%osvie,$xlir$neter,#xlir%xli%asvph!")
 p north_korean_cipher("ger^wsqifshc*nywx^kix^qi&10000*fekw@sj$gssp%vergl@hsvmxsw?")
 
 # Reflection
+#The majority of my reflection for this section is within my cultural assignment for this week, but I will quickly recap.  I felt it was difficult to pair on this 
+#excersize.  Only because there were a lot of diferent logical frameworks the code could take, and there were a lot of 
+#things that needed to be taken care of, so it was very hard to be on the same page, or have the same code in mind.
+#
  
