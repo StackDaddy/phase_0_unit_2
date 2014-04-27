@@ -122,5 +122,7 @@ puts array.shuffle! != ["Adam Hardy", "Adrian Soghoian", "Ajay Bir Singh", "Alec
 
 
 # 5. Reflection 
-
+#This excersize really made me appreciate ruby.  What I did here was think about what I needed to do, and then I searched for methods that did such things.
+#It turns out that I was able to create a very simple solution using methods that already existed.  The Ruby Docs page was extremly helpfull
+#in clarifying what each method does.  
 
