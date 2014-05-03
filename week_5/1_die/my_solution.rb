@@ -1,7 +1,7 @@
 # U2.W5: Die Class 1: Numeric
 
 
-# I worked on this challenge [by myself].
+# I worked on this challenge [by ].
 
 # 2. Pseudocode
 
@@ -39,7 +39,7 @@ end
 
 # 4. Refactored Solution
 
-
+#Everything worked the first time around.  
 
 
 
@@ -51,3 +51,8 @@ end
 
 
 # 5. Reflection 
+
+#I was somewhat familiar with this challenge from reading Chris Pine's Learn to Program book.  He used 
+#this example in hs class chapter.  I did learn, about the raising an Argument error.  That was pretty cool.
+#Iam still having trouble using that in a driver test code however.  I will have to continue to learn how that class, assuming it is a class
+#worlks and then come back and play with it  little more in the driver test code.  

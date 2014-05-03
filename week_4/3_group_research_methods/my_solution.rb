@@ -5,18 +5,26 @@ my_family_pets_ages = {"Evi" => 6, "Hoobie" => 3, "George" => 12, "Bogart" => 4,
             "Annabelle" => 0, "Ditto" => 3}
 
 # Person 1's solution
-#def my_array_finding_method(source, thing_to_find)
-  # Your code here!
-#end
+def my_array_finding_method(source, thing_to_find)
+  source.select{|x| x.to_s.include?(thing_to_find)}
+end
 
-#def my_hash_finding_method(source, thing_to_find)
-  # Your code here!
-#end
+def my_hash_finding_method(source, thing_to_find)
+  source.select{|name, age| age == thing_to_find}.keys
+end
 
 # Identify and describe the ruby method you implemented. 
-# 
+# select on an array returns a new array of elements for which the code
+# block returns true. In this case I was testing whether each element in
+# the source array included a particular letter.
+# select on a hash returns a hash of the key/value pairs for which the
+# code block is true. In this case, I was testing whether the age matched 
+# the value 3. In order to return an array of the pet names, I called #keys
+# on the resulting hash.
 #
 #
+#
+
 
 # Person 2
 def my_array_modification_method(source, thing_to_modify)
@@ -44,28 +52,38 @@ p my_hash_modification_method(my_family_pets_ages, 2) == {"Evi" => 8, "Hoobie" =
 
 
 # Person 3
-#def my_array_sorting_method(source)
-  # Your code here!
-#end
+def my_array_sorting_method(source)
+  source.sort_by { |e| e.to_s }
+end
 
-#def my_hash_sorting_method(source)
-  # Your code here!
-#end
+def my_hash_sorting_method(source)
+  def my_hash_sorting_method(source)
+   source.sort_by {|name, age| age}
+end
+end
 
 # Identify and describe the ruby method you implemented. 
-# 
-#
-#
+=begin
+sort_by is a more flexible version of 'sort' becuase it allows you to provide expressions to better control the sort.  
+sort_by worked for both sorting methods becuase the expression syntax is flexable.  
 
+In my_array_sorting_method, the expression allows us to transform the fixnum values within the string to strings.  
+This is important as otherwise the sort_by method would not know how to sort those values.  This ability to transform 
+the fix num values into strings is also why we can't just use a 'sort' method.
 
-# Person 4
-#def my_array_deletion_method(source, thing_to_delete)
-  #Your code here!
-#end
+In my_hash_sorting_method, the expression allows us to define the key (name) and value (age) and then choose which 
+perameter we want to sort the hash by.  
+=end
 
-#def my_hash_deletion_method(source, thing_to_delete)
-  #Your code here!
-#end
+# Person 4 Greg White
+def my_array_deletion_method(source, thing_to_delete)
+  source.delete_if {|element| element.is_a?(String)  && element.include?(thing_to_delete)} 
+end
+
+def my_hash_deletion_method(source, thing_to_delete)
+  source.delete_if {|key, value| key.include?(thing_to_delete)} 
+  print source
+end
 
 # Identify and describe the ruby method you implemented. 
 # 
@@ -88,7 +106,9 @@ p my_hash_modification_method(my_family_pets_ages, 2) == {"Evi" => 8, "Hoobie" =
 #p my_hash_deletion_method(my_family_pets_ages, "George") == {"Evi" => 8, "Hoobie" => 5, "Bogart" => 6, "Poly" => 6, "Annabelle" => 2, "Ditto" => 5}
 
 # Reflect!
-# 
+# I enjoyed this excersize.  I definitely think I get a lot out of doing an excersize by myself, but I know 
+#I also get a lot out of looking at other people's code.  It really looks like my groupd worked really hard to write the dry'est 
+#code they possibly could and I learned alot from the style of it.  
 # 
 # 
 # 
