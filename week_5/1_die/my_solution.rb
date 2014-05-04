@@ -50,7 +50,7 @@ end
 
 die = Die.new(sides) # create a randomly sided die 
 
-puts die.sides == sidees # does Die#sides return side_num?
+puts die.sides == sides # does Die#sides return side_num?
 puts (1..sides).include?(die.roll)
 
 
