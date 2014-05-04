@@ -89,3 +89,7 @@ puts card2.check_card == false
 
 
 # 5. Reflection 
+#This excersize was certainly a challenge.  It forced me to look a lot of things up that were necessary for the function.
+#Again helped me see the importance of keeping the code dry.  One thing that this excersize enforced was the difference between 
+#a function like map and each.  Each just iterates through and array, while map iterates and spits back a new array with the changes.
+#Also this excersize forved me to be very careful with understanding what tyoes of object are actually returned.  
