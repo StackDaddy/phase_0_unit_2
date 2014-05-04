@@ -48,9 +48,9 @@ end
 
 #puts Die.new(0) == "ArgumentError: sides must be greater than or equal to 1."
 
-die = Die.new(sides) # create a randomly sided die 
+die = Die.new(sides)
 
-puts die.sides == sides # does Die#sides return side_num?
+puts die.sides == sides 
 puts (1..sides).include?(die.roll)
 
 
