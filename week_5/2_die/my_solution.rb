@@ -57,6 +57,14 @@ end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
+# die = Die.new([])  raises an ArgumentError
+
+faces = ('a'..'e').to_a.shuffle
+die = Die.new(faces)
+
+puts die.sides == faces.length
+puts faces.include?(die.roll) 
+
 
 
 
