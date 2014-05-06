@@ -46,7 +46,13 @@ end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
-#puts Die.new(0) == "ArgumentError: sides must be greater than or equal to 1."
+#puts Die.new(0) == #should raise an Argument Error
+
+#die = Die.new(sides)
+
+#puts die.sides == sides 
+#puts (1..sides).include?(die.roll)
+
 
 
 

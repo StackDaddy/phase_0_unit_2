@@ -83,18 +83,17 @@ end
 
 # Refactored Solution
 
-def get_col(boggle_board, col)
-    column =[]
-    boggle_board.length.times do |i|
-    	column << boggle_board[i][col]
-      end
-      return column
-
-end
+def get_col(col)
+        output = []
+        for x in 0...@grid.length
+            output << @grid[x][col]
+        end
+        return output
+    end
 
 
 # DRIVER TESTS GO BELOW THIS LINE
-p get_col(boggle_board, 1)  ==  ["r", "o", "c", "a"]
+print get_col(boggle_board, 1)  ==  ["r", "o", "c", "a"]
 
 # Reflection 
 
