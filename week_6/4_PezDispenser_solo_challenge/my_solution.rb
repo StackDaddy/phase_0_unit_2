@@ -15,14 +15,40 @@
 
 
 # 2. Pseudocode
+#Initializing the class would be the first thing to do.  Each Pez object will be passed 
+#an array of different pez.  
+#We will need to make a pez_count method that calls the length method on the local variable we create 
+#upon initialization.
+#We will need to make a function that takes a pez from the top of the list, I belive the shift method will do the trick.
+#I'd like to be able to add a pez back to the bottom of the dispenser to save it for later, I believe the push function will do this.
+#This function will take a parameter.  
+#Lastly, to view the contents iterate through the array and puts the pez.
 
 
 
 # 3. Initial Solution
 
 class PezDispenser
- 
-# your code here!
+	def initialize(candy)
+		@candy = candy 
+	end
+
+	def pez_count
+		@candy.length 
+	end
+
+	def get_pez 
+		@candy.shift
+	end 
+
+	def add_pez(pez)
+		@candy << pez
+	end 
+
+	def see_all_pez 
+		@candy.each {|item| puts item}
+	end
+
  
 end
  
@@ -39,6 +65,13 @@ end
 
 flavors = %w(cherry chocolate cola grape lemon orange peppermint raspberry strawberry).shuffle
 super_mario = PezDispenser.new(flavors)
+
+def assert
+  raise "Assertion failed!" unless yield
+end
+
+assert {super_mario.pez_count == 9}
+
 puts "A new pez dispenser has been created. You have #{super_mario.pez_count} pez!"  
 puts "Here's a look inside the dispenser:"  
 puts super_mario.see_all_pez 
@@ -49,7 +82,18 @@ puts "Oh, you want one do you?"
 puts "The pez flavor you got is: #{super_mario.get_pez}"
 puts "Now you have #{super_mario.pez_count} pez!"
 
+def assert
+  raise "Assertion failed!" unless yield
+end
+
+
+
 
 
 
 # 5. Reflection 
+#I though this excersize was pretty easy.  But it was ncie practice to go from normal people talk
+#to code.  I feel like I will see a lot of this in my career.  I was a little confused on what to 
+#do with the assert statements.  
+
+
