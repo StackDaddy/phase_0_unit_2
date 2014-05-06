@@ -60,6 +60,18 @@ end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
+game = GuessingGame.new(5)
+
+puts game.solved? == false 
+
+puts game.guess(2) == :low 
+
+puts game.guess(7) == :high 
+
+puts game.guess(5) == :correct 
+
+puts game.solved? == true 
+
 
 
 

@@ -60,7 +60,11 @@ p bakery_num(41, "cake") == "You need to make 5 pie(s), 0 cake(s), and 1 cookie(
 
 #  Reflection 
 
-#This was a little difficult.  I did this alone.  
+#This was a little difficult.  I did this alone.  This excersize got me in the habit of first thinking what was the point of this software.
+#For example, how will this software actually be relevant.  The original code didn't really make sense, because people were comming in and ordering one thing 
+#and then the program was just filtering the order if it wasn't an exact match.  Not the best customer service.  So, 
+#I think the important thing to take away from this excersize is to first think about the most polite possible way to inetract with a customer, and then 
+#try and have the software emulate that sort of empathetic human behavior.  
 
 
 

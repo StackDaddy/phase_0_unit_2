@@ -54,6 +54,11 @@ end
 #puts (1..sides).include?(die.roll)
 
 
+die = Die.new(sides)
+
+puts die.sides == sides 
+puts (1..sides).include?(die.roll)
+
 
 
 # 5. Reflection 
