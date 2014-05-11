@@ -46,17 +46,17 @@ Define the following commands and describe how they work/what they do.
 
 ## Release 4: Git Workflow
 
-- Push files to a remote repository
-git remote add <name> <url>
-git push <remote> <branch>
-- Fetch changes
-get fetch <name>
-- Commit locally
-git add <file>
-git commit -m "message"
+#- Push files to a remote repository
+#git remote add <name> <url>
+#git push <remote> <branch>
+#- Fetch changes
+#get fetch <name>
+#- Commit locally
+#git add <file>
+#git commit -m "message"
 
 ## Release 5: Reflection
 
 #This excersize was very necessary and am glad it was inluded in the curriculum.  I 
 #still have a long way to go to fully understanding Git and Github, but this definitely
-#gave me enough knowlege to have some idea what I have been doing and will continue to be doing.  
+#gave me enough knowlege to have some idea what I have been doing and will continue to #be doing.  
